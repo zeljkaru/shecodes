@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      img {
+        border-radius: 15px;
+      }
+
+      h1 {
+        padding: 10px;
+      }
+
+   
+      ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 8px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 10px 35px;
+        margin: 20px auto 25px;
+        background: #e3be63;
+        border: 1px solid #e3be63;
+        border-radius: 20px;
+        transition: all 200mps ease-in-out;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      button:hover {
+        color: #3d4d1a;
+        background: #f8f9e9;
+        cursor: pointer;
+        border: 1px solid #f8f9e9;
+        opacity: 0.9;
+      }
+
+      hr {
+        border: 0.5 solid #3d4d1a;
+      }
+      .content-wrapper {
+        width: 600px;
+        margin: 0 auto;
+        border: 1px none;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        padding: 35px;
+      }
+
+      .header-img {
+        margin: 15px auto;
+      }
+
+      .intro-txt {
+        text-align: justify;
+        line-height: 1.5;
+        padding: 10px 0;
+      }
+
+      .cta-txt {
+        font-weight: bold;
+        line-height: 1.5;
+      }
+
+      .footer {
+        font-weight: lighter;
+        font-size: 14px;
+        margin: 20px 0;
+      }
+
+      .footer-ps {
+        font-weight: lighter;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <div class="header-img">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/442/original/avocado-tree-illustration.jpg?1630518491"
+          alt="Avocado Tree"
+          width="600px"
+        />
+      </div>
+
+      <h1>Grow Avocado Tree At Home</h1>
+
+      <h2><em>It's easy & fun</em></h2>
+
+      <div class="intro-txt">
+        <p>
+          Do you enjoy guacamole? How about an avocado sandwich with hummus and
+          falafel? Well, next time you are preparing such a lovely meal with
+          avocado, don't just throw away the seed - use it to grow your own
+          avocado tree at home! It's easy and fun, takes a little effort, a lot
+          of patience and kind of becomes addictive. Trust me, soon enough you
+          will have an avocado trees family in your home!
+        </p>
+      </div>
+
+      <div class="cta-txt">
+        <p>Follow this simple steps as illustrated in the picture above and grow your avocado tree:</p>
+      </div>
+
+      <ul>
+        <li>👉 Remove and clean pit</li>
+        <li>👉 Locate which end is "up" and which end is "down"</li>
+        <li>👉 Pierce with three toothpicks</li>
+        <li>👉 Place seed half-submerged in a glass of water</li>
+        <li>👉 Wait for your avocado seed to sprout</li>
+        <li>👉 Pot in soil when tree is about 15cm tall</li>
+        <li>👉 Water and watch it grow</li>
+        <li>👉 Pinch out top leaves to encourage it to grow higher</li>
+      </ul>
+
+      <div class="cta-txt">
+        <p>
+          🥑 🥑 🥑
+          <br />
+          <br />
+          Sign up for our weekly newsletter and learn even more tips & tricks
+          about this lovely hobby!
+        </p>
+      </div>
+
+      <button class="signup-button">Sign Up Now</button>
+
+      <hr />
+
+      <div class="footer">
+        <p>
+          <em>
+            Coded by
+            <a href="https://www.instagram.com/zeljka.ru/" target="_blank">Željka Ru.</a> 🙋🏻‍♀️
+          </em>
+        </p>
+      </div>
+      <div class="footer-ps">
+        <p>
+          <em>
+            P.S. While making this, I really enjoyed this
+            <a
+              href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWWQRwui0ExPn?si=qnMzMijZT129PN4TLuhcTw&dl_branch=1"
+              target="_blank">Spotify playlist.</a
+            ></em
+          >
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function signUp() {
+        let name = prompt("What's your first name");
+        let email = prompt("What is your e-mail address?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! You've successfully signed up for our newsletter! See you in your inbox 📥  🥑"
+        );
+      }
+
+      let applyButton = document.querySelector(".signup-button");
+      applyButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
